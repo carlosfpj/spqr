@@ -36,6 +36,11 @@ ul {
   flex-direction: column;
 }
 
+.col img {
+  width: 250px;
+  height: 200px;
+}
+
 .color {
   background: #EFEFEF;
 }
