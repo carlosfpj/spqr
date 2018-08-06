@@ -48,6 +48,7 @@ ul {
 .footer {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .footer .button {
@@ -85,8 +86,14 @@ ul {
   position: absolute;
   top: 490px;
   color: black;
-
 }
+
+.imgsubtitle {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu {
   color: white;
   position: relative;
