@@ -17,13 +17,12 @@ header {
 }
 
 li {
-  border-right: 1px solid white;
   font-size: 17px;
   font-weight: 500;
 }
 
 nav {
-  height: inherit;
+  height: inherit
 }
 
 nav a {
@@ -37,7 +36,9 @@ nav a {
 }
 
 nav a:hover {
-  border-top: 5px solid red;
+  /*box shadow: dónde se ubica la sombra, x,y,difuminado, color.*/
+  box-shadow: inset 0px 7px 0px red;
+  /*border-top: 5px solid red;*/
 }
 nav ul {
   margin: 0;
@@ -51,6 +52,11 @@ nav li {
   display: flex;
   align-items: center;
   list-style: none;
+}
+
+nav li::after{
+  content: "|"
+
 }
 
 ul {
