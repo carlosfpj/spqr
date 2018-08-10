@@ -6,10 +6,44 @@ body {
   margin: 0px;
 }
 
+header {
+  height: 50px;
+  background: #273b47;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  align-items: center;
+}
+
 li {
   border-right: 1px solid white;
   font-size: 17px;
   font-weight: 500;
+}
+
+nav {
+  height: inherit;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-top: 5px solid red;
+}
+nav ul {
+  margin: 0;
+  height: inherit;
+}
+
+nav li {
+  height: inherit;
 }
 
 ul {
@@ -56,10 +90,10 @@ ul {
   margin-right: 9px;
 }
 
-.header {
-  background: #273b47;
+.header-right {
   display: flex;
-  margin-bottom: 15px;
+  align-items: center;
+  height: inherit;
 }
 
 .header .button {
@@ -96,6 +130,7 @@ ul {
 }
 
 .menu {
+  height: inherit;
   color: white;
   position: relative;
   top: 5px;
