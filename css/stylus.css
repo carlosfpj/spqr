@@ -1,9 +1,11 @@
 a {
-  margin-right: 8px;
+  color: gray;
 }
 
 body {
   margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: #515151;
 }
 
 header {
@@ -68,6 +70,17 @@ ul {
   list-style: none;
 }
 
+.autor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.autor img {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
 .button {
   /*border-bottom: 5px solid black;*/
   border-radius: 6px;
@@ -121,6 +134,14 @@ ul {
   background: #EFEFEF;
 }
 
+.descripcion {
+  background: rgba(208, 205, 205, 0.5);
+  position: absolute;
+  top: 320px;
+  color: black;
+}
+
+
 .footer {
   display: flex;
   justify-content: center;
@@ -138,24 +159,21 @@ ul {
   height: inherit;
 }
 
+.header-right a {
+  margin-right: 8px;
+}
+
 .header-right .button {
   margin-left: 10px;
 }
 
 .imagenprincipal {
+  position: relative;
   display: block;
   width: 700px;
   margin: auto;
   border: 2px solid #988337;
-  /*position: relative;
-  left: 100px;*/
-}
-
-.imagenprincipalinfo {
-  background: rgba(208, 205, 205, 0.5);
-  position: absolute;
-  top: 490px;
-  color: black;
+  /*left: 100px;*/
 }
 
 .imgsubtitle {
@@ -189,6 +207,37 @@ ul {
   margin: 10px;
 }
 
+.paginador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginador a {
+  text-decoration: none;
+}
+
+.paginador ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.paginador li {
+  background: #eaeaea;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  border: 1px solid gray;
+  margin: 0 5px;
+}
+
+.paginador li.selected {
+  border: transparent;
+  background: black;
+  color: white;
+}
+
 .principal {
   display: block;
   width: 1300px;
@@ -211,6 +260,8 @@ ul {
 .subtitle {
   width: 300px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .subtitle p {
@@ -223,12 +274,4 @@ ul {
   position: relative;
   top: 10px;
   left: 10px;
-}
-
-.title {
-  display: block;
-}
-
-.title h4 {
-  margin: 0px;
 }
