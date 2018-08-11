@@ -37,7 +37,7 @@ nav a {
 
 nav a:hover {
   /*box shadow: dónde se ubica la sombra, x,y,difuminado, color.*/
-  box-shadow: inset 0px 7px 0px red;
+  box-shadow: inset 0px 7px 0px red!important;
   /*border-top: 5px solid red;*/
 }
 nav ul {
@@ -55,13 +55,42 @@ nav li {
 }
 
 nav li::after{
-  content: "|"
+  content: "|";
+  display: inline-block;
+}
 
+nav li a.is-active {
+  box-shadow: inset 0px 7px 0px #7dcd40;
 }
 
 ul {
   display: flex;
   list-style: none;
+}
+
+.button {
+  /*border-bottom: 5px solid black;*/
+  border-radius: 6px;
+  border-width: 0px;
+  box-shadow: inset 0 -5px 0px rgba(0, 0, 0, .3);
+  padding: 5px 10px 10px;
+  color: white;
+  /*margin: 10px;*/
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.button:active {
+  transform: scale(.9);
+  transition: .2s;
+}
+
+.button.green {
+  background: #7dcd40;
+}
+
+.button.red {
+  background: #FF6348;
 }
 
 .buttonsearch {
@@ -109,13 +138,8 @@ ul {
   height: inherit;
 }
 
-.header .button {
-  background: #ff4842;
-  padding: 10px;
-  color: white;
-  margin: 10px;
-  font-size: 15px;
-  font-weight: 700;
+.header-right .button {
+  margin-left: 10px;
 }
 
 .imagenprincipal {
