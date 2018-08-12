@@ -229,7 +229,10 @@ ul {
 }
 
 .paginador a {
+  display: block;
+  height: inherit;
   text-decoration: none;
+  padding: 0 10px;
 }
 
 .paginador ul {
@@ -242,12 +245,12 @@ ul {
   background: #eaeaea;
   height: 40px;
   line-height: 40px;
-  padding: 0 10px;
   border: 1px solid gray;
   margin: 0 5px;
 }
 
 .paginador li.selected {
+  padding: 0 10px;
   border: transparent;
   background: black;
   color: white;
